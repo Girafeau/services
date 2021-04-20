@@ -1,0 +1,32 @@
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "email": "jean.long@test.com",
+    "firstname": "jean",
+    "lastname": "long"
+}
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "email": "anne.long@test.com",
+  "firstname": "anne",
+  "lastname": "long"
+}
+
+###
+
+POST http://localhost:8080/api/users/{{id}}/cards
+Content-Type: application/json
+
+{
+  "number": "4854847",
+  "code": "325",
+  "owner": "Jean Long",
+  "date": "10-09-2023",
+  "amount": "200"
+}

@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class User {
+-id : String
+-email : String
+-firstname : String
+-lastname : String
+-createdAt : String
+-lastModifiedAt : String
+}
+class Card {
+-id : String
+-number : int
+-code : int
+-owner : String
+-date : String
+-amount : double
+}
+
+Card "*" --- "1" User : has
+
+@enduml
